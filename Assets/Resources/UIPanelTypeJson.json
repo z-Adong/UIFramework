@@ -1,0 +1,10 @@
+{
+    "panelInfoList":
+    [
+        {"panelType":"MainMenu","path":"UIPanel/MainMenuPanel"},
+        {"panelType":"PrefaberMessage","path":"UIPanel/PrefaberMessagePanel"},
+        {"panelType":"SpriteMessage","path":"UIPanel/SpriteMessagePanel"},
+        {"panelType":"ItemMessage","path":"UIPanel/ItemMessagePanel"},
+        {"panelType":"IconMessage","path":"UIPanel/IconMessagePanel"}
+    ]
+}
