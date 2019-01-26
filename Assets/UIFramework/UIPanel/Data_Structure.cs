@@ -21,7 +21,3 @@ public class UIPanelInfo
     public string path;//面板Prefab的路径
     public UIPanelInfo() { }
 }
-
-
-
-
