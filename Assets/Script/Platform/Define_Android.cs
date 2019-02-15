@@ -17,12 +17,13 @@ public class Define_Android : Sing<Define_Android>
 {
 
     private AndroidJavaObject jo;
-    
+
     public void Init()
     {
         //call包名
         AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        
     }
     //无参 无返回值
     public void CallVoid()
@@ -40,7 +41,7 @@ public class Define_Android : Sing<Define_Android>
         return jo.Call<float>("XXXXXXX");
     }
     //无参 有返回值
-    public float CallString()
+    public string CallString()
     {
         return jo.Call<string>("XXXXXXX");
     }

@@ -17,7 +17,7 @@ public class PacketEditor
     [MenuItem("Assets/1.生成文件")]
     static void CreateAssetText()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         //获取在Project视图中选择的所有游戏对象
         Object[] SelectedAsset = Selection.GetFiltered(typeof(Object), SelectionMode.DeepAssets);
 
@@ -66,7 +66,7 @@ public class PacketEditor
     [MenuItem("Assets/2.MAC打包模型/IOS")]
     static void CreateSceneALL_MAC_IOS()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = macPath + "/IOS/";
         if (!Directory.Exists(path))
         {
@@ -78,7 +78,7 @@ public class PacketEditor
     [MenuItem("Assets/2.MAC打包模型/Android")]
     static void CreateSceneALL_MAC_Android()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = macPath + "/Android/";
         if (!Directory.Exists(path))
         {
@@ -90,7 +90,7 @@ public class PacketEditor
     [MenuItem("Assets/2.MAC打包模型/Windows")]
     static void CreateSceneALL_MAC_Windows()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = macPath + "/Windows/";
         if (!Directory.Exists(path))
         {
@@ -103,7 +103,7 @@ public class PacketEditor
     [MenuItem("Assets/3.Windows打包模型/IOS")]
     static void CreateSceneALL_Windows_IOS()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = windowsPath +"/iOS";
         if (!Directory.Exists(path))
         {
@@ -116,7 +116,7 @@ public class PacketEditor
     [MenuItem("Assets/3.Windows打包模型/Android")]
     static void CreateSceneALL_Windows_Android()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = windowsPath +"/Android";
         if (!Directory.Exists(path))
         {
@@ -129,7 +129,7 @@ public class PacketEditor
     [MenuItem("Assets/3.Windows打包模型/Windows")]
     static void CreateSceneALL_Windows_Windows()
     {
-        Caching.ClearCache();
+        Caching.CleanCache();
         string path = windowsPath +"/Windows";
         if (!Directory.Exists(path))
         {

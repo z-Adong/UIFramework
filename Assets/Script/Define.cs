@@ -7,6 +7,18 @@ using System.Security.Cryptography;
 
 public class Define{
 
+
+	public const int HEAD_LEN = 8;//头长度
+    public const int HEAD_Add = 22;
+    public const int SOCKET_PACKAGE = 2048 * 8;//缓冲区的大小
+    public const int SOCKET_OUTTIME = 40000;//接收超时
+ 	public static int GetCmdDataLen(byte[] data)
+    {
+        ByteBuffer buf = new ByteBuffer(data);
+        buf.ReadInt();
+        int len = buf.ReadInt();
+        return len;
+    }
 	public static string GetCurTime()
     {
         string s = string.Empty;

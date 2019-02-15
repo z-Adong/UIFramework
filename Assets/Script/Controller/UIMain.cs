@@ -9,8 +9,22 @@ using System;
 public class UIMain : MonoBehaviour {
     UIPanelManager panelManager;
     void Start () {
+
+        InitPlatform();
         //UI基本面板
         panelManager = UIPanelManager.Instance;
         panelManager.PushPanel(UIPanelType.MainMenu);
+
+        //通信原生
+        NativeCall.CallVoid();
+    }
+    //初始化原生
+    public void InitPlatform()
+    {
+#if UNITY_EDITOR
+        return;
+#elif UNITY_ANDROID
+        Define_Android.Instance.Init();
+#endif
     }
 }

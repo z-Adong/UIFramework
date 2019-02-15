@@ -15,7 +15,7 @@ public class NativeCall
 #elif UNITY_IOS
         Define_IOS.IOS_CallVoid();
 #elif UNITY_ANDROID
-        Define_Android.CallVoid();
+        Define_Android.Instance.CallVoid();
 #endif
     }
 }
